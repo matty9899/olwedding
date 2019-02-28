@@ -1,0 +1,534 @@
+body {
+  background-image: url("../images/bg.png");
+  background-size: 100px; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: "GFS Didot", serif !important;
+    color: #cfb666;
+    text-transform: uppercase; }
+  body h2 {
+    font-size: 35px !important; }
+  body h3 {
+    font-size: 24px !important; }
+  body a {
+    color: #cfb666;
+    font-family: "GFS Didot", serif; }
+    body a:hover {
+      color: #cfb666; }
+  body p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100; }
+  body button {
+    font-family: "GFS Didot", serif; }
+  body .highlight {
+    color: #cfb666; }
+  body .btn.btn-primary {
+    background-color: #cfb666;
+    border-radius: 0 !important; }
+  body .section-heading {
+    margin-bottom: 0; }
+    body .section-heading h2 {
+      color: #cfb666; }
+  body .section {
+    padding: 100px 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 30px; }
+    body .section:after {
+      content: " ";
+      color: transparent;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #cfb666;
+      border-radius: 15px;
+      z-index: -10; }
+  body header#qbootstrap-header {
+    background-color: #ffffff;
+    margin-top: 0;
+    position: fixed;
+    border-bottom: 1px solid #e8e8e8; }
+    body header#qbootstrap-header #navbar li a {
+      color: #3e3e3e;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
+      body header#qbootstrap-header #navbar li a span {
+        font-family: "GFS Didot", serif;
+        text-transform: uppercase; }
+        body header#qbootstrap-header #navbar li a span:before {
+          background-color: transparent; }
+    body header#qbootstrap-header #navbar li.active a {
+      color: #cfb666; }
+    body header#qbootstrap-header #navbar li:hover a {
+      color: #cfb666; }
+    body header#qbootstrap-header .navbar-brand {
+      padding: 10px 0; }
+      body header#qbootstrap-header .navbar-brand img {
+        width: 80px;
+        height: auto; }
+  body .bg-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 100%;
+    padding: 170px 0;
+    height: auto !important; }
+  body .qbootstrap-hero .qbootstrap-overlay {
+    background: rgba(0, 0, 0, 0.5) !important; }
+  body .qbootstrap-hero .display-tc h1 {
+    letter-spacing: 5px !important;
+    font-size: 22px !important;
+    margin-bottom: 35px; }
+    body .qbootstrap-hero .display-tc h1 span:before, body .qbootstrap-hero .display-tc h1 span:after {
+      display: none; }
+  body .qbootstrap-hero .display-tc h3 {
+    font-size: 20px;
+    font-family: "GFS Didot", serif;
+    margin-bottom: 40px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    color: #cfb666; }
+  body .qbootstrap-hero .display-tc p {
+    font-weight: 100;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "GFS Didot", serif;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    line-height: 30px; }
+  body .qbootstrap-hero .display-tc img {
+    max-width: 300px; }
+  body .schedule {
+    position: relative; }
+    body .schedule .schedule-item {
+      margin-bottom: 30px; }
+      body .schedule .schedule-item p {
+        padding-bottom: 40px; }
+      body .schedule .schedule-item img {
+        margin-bottom: 20px;
+        border-radius: 0; }
+      body .schedule .schedule-item h3.large {
+        font-size: 40px !important; }
+    body .schedule .schedule-left {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      max-width: 50%; }
+      body .schedule .schedule-left p {
+        font-family: "GFS Didot", serif;
+        text-transform: uppercase;
+        color: #cfb666;
+        margin: 0;
+        padding: 0; }
+    body .schedule .schedule-right {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      max-width: 50%; }
+      body .schedule .schedule-right p {
+        font-family: "GFS Didot", serif;
+        text-transform: uppercase;
+        color: #cfb666;
+        margin: 0;
+        padding: 0; }
+  body .accommodation .accommodation-item {
+    margin-bottom: 40px; }
+    body .accommodation .accommodation-item .image {
+      padding-bottom: 40px; }
+      body .accommodation .accommodation-item .image img {
+        width: 100%; }
+    body .accommodation .accommodation-item p:first-child {
+      margin-bottom: 0; }
+    body .accommodation .accommodation-item span.price {
+      font-size: 20px;
+      display: block;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-weight: 100; }
+      body .accommodation .accommodation-item span.price.last {
+        padding-bottom: 50px; }
+    body .accommodation .accommodation-item span.amount {
+      color: #cfb666;
+      font-size: 50px;
+      font-family: "GFS Didot", serif;
+      line-height: 50px; }
+    body .accommodation .accommodation-item.evening .image {
+      padding-bottom: 20px; }
+    body .accommodation .accommodation-item.evening h3 {
+      margin-top: 0;
+      margin-bottom: 15px; }
+    body .accommodation .accommodation-item.evening .contact {
+      padding-top: 50px; }
+  body .helpful-info {
+    padding-bottom: 100px; }
+    body .helpful-info .info-item {
+      margin-bottom: 40px;
+      padding: 0 40px; }
+      body .helpful-info .info-item h3 {
+        padding-bottom: 30px; }
+      body .helpful-info .info-item p.heading {
+        margin-bottom: 0; }
+      body .helpful-info .info-item p.sub-heading {
+        color: #cfb666;
+        font-weight: bold; }
+      body .helpful-info .info-item .church-img {
+        opacity: 0.6;
+        margin-bottom: 20px; }
+      body .helpful-info .info-item .info-section {
+        padding-bottom: 40px; }
+  body .our-story .story-row {
+    padding-bottom: 40px; }
+    body .our-story .story-row .story-item .thumbnail {
+      width: 100%;
+      padding-bottom: 62.326388888889%;
+      background-color: #cfb666; }
+  body .rsvp {
+    padding-bottom: 50px; }
+    body .rsvp .form-group {
+      width: 100%;
+      margin-bottom: 30px; }
+      body .rsvp .form-group .form-control {
+        width: 100% !important;
+        border-radius: 0 !important;
+        font-weight: normal;
+        background-color: #e5e5e5;
+        border-color: transparent;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 16px; }
+        body .rsvp .form-group .form-control:focus {
+          border-color: #cfb666; }
+      body .rsvp .form-group label {
+        font-weight: normal;
+        font-size: 16px; }
+    body .rsvp .send-rsvp-button {
+      padding: 0;
+      float: right; }
+      body .rsvp .send-rsvp-button button {
+        border-radius: 0 !important;
+        background-color: #cfb666;
+        color: #ffffff;
+        border: 0; }
+    body .rsvp .checkbox-container {
+      display: block;
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      body .rsvp .checkbox-container input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer; }
+        body .rsvp .checkbox-container input[type="checkbox"]:checked ~ .checkmark:after {
+          display: block; }
+      body .rsvp .checkbox-container .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: #e5e5e5;
+        border: 2px solid #e5e5e5; }
+        body .rsvp .checkbox-container .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 11px;
+          top: 6px;
+          width: 8px;
+          height: 15px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+      body .rsvp .checkbox-container:hover input ~ .checkmark {
+        background-color: #ccc; }
+      body .rsvp .checkbox-container input:checked ~ .checkmark {
+        background-color: #cfb666;
+        border: 0; }
+    body .rsvp .confirmation {
+      display: inline-block;
+      width: 100%;
+      background-color: #46b14f;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      opacity: 0;
+      color: #ffffff; }
+      body .rsvp .confirmation p {
+        margin-bottom: 0; }
+    body .rsvp .mailto {
+      font-family: "Open Sans", Arial, sans-serif;
+      color: #7f7f7f;
+      text-decoration: underline; }
+      body .rsvp .mailto:hover {
+        color: #cfb666; }
+  body .footer {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+
+.qbootstrap-nav-toggle i {
+  color: #cfb666;
+  background: #cfb666; }
+  .qbootstrap-nav-toggle i:before {
+    color: #cfb666 !important;
+    background: #cfb666 !important; }
+  .qbootstrap-nav-toggle i:after {
+    color: #cfb666 !important;
+    background: #cfb666 !important; }
+
+.login {
+  text-align: center;
+  margin: 30px;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  position: relative; }
+  .login:after {
+    content: " ";
+    color: transparent;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cfb666;
+    border-radius: 15px; }
+  .login .container {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 10;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .login img {
+    margin-bottom: 30px;
+    width: 250px; }
+  .login h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: "GFS Didot", serif;
+    font-size: 22px;
+    letter-spacing: 7px; }
+  .login p {
+    font-family: "GFS Didot", serif;
+    color: #cfb666;
+    letter-spacing: 3px;
+    font-size: 16px; }
+  .login form {
+    max-width: 250px;
+    margin: 0 auto; }
+  .login input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: "GFS Didot", serif;
+    font-size: 12px; }
+    .login input:hover [type="submit"] {
+      background-color: #333333; }
+  .login input[type="password"], .login input[type="text"] {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    padding: 0 10px;
+    text-align: center;
+    outline: 0;
+    font-family: "GFS Didot", serif;
+    font-size: 16px;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
+    .login input[type="password"]:focus, .login input[type="text"]:focus {
+      border: 1px solid #cfb666; }
+      .login input[type="password"]:focus::placeholder, .login input[type="text"]:focus::placeholder {
+        opacity: 0; }
+    .login input[type="password"]::placeholder, .login input[type="text"]::placeholder {
+      font-family: "GFS Didot", serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #b5b5b5 !important;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+  .login button {
+    background-color: #cfb666;
+    border: 0;
+    color: #ffffff;
+    height: 37px;
+    border: 1px solid #cfb666;
+    padding: 0 30px;
+    border-radius: 0; }
+  .login .error p {
+    color: red;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 14px; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body .section .container {
+    width: calc(750px - 100px); } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body .section .container {
+    width: calc(970px - 100px); } }
+
+@media screen and (min-width: 1200px) {
+  body .section .container {
+    width: calc(1170px - 100px); } }
+
+@media screen and (max-width: 768px) {
+  body .section {
+    padding: 50px 0 !important; }
+  body .section-heading h2 {
+    font-size: 30px !important; }
+  body .qbootstrap-hero .display-tc img {
+    max-width: 200px; }
+  body .qbootstrap-hero .display-tc .holder {
+    font-size: 18px !important; }
+    body .qbootstrap-hero .display-tc .holder span:before {
+      display: none; }
+    body .qbootstrap-hero .display-tc .holder span:after {
+      display: none; }
+  body .qbootstrap-hero .display-tc h3 {
+    font-size: 20px !important; }
+  body .qbootstrap-hero .display-tc p {
+    font-size: 18px;
+    line-height: 24px; }
+  body .bg-image {
+    background-position: center !important;
+    padding: 100px 0; }
+  body .schedule .schedule-left p, body .schedule .schedule-right p {
+    font-size: 16px; }
+  .login img {
+    width: 200px; }
+  .login h1 {
+    font-size: 50px; }
+  .login button {
+    height: 40px; } }
+
+@media screen and (max-width: 480px) {
+  body p {
+    font-size: 16px; }
+  body header {
+    min-height: auto; }
+    body header .navbar-brand {
+      padding: 10px 0 !important; }
+      body header .navbar-brand img {
+        width: 80px !important; }
+  body .section {
+    margin: 30px 20px; }
+    body .section .section-heading h2 {
+      font-size: 26px !important; }
+    body .section .btn-primary {
+      font-size: 12px; }
+    body .section.accommodation .accommodation-item .item {
+      padding-bottom: 30px; }
+    body .section.accommodation .amount {
+      font-size: 40px !important; }
+    body .section.accommodation .price {
+      font-size: 16px !important; }
+    body .section.schedule .schedule-item p {
+      padding-bottom: 0px; }
+    body .section.schedule .schedule-item .large {
+      margin-top: 0;
+      font-size: 32px !important; }
+    body .section.schedule .schedule-left, body .section.schedule .schedule-right {
+      position: relative;
+      width: calc(100% - 40px);
+      display: block;
+      max-width: none;
+      left: 20px;
+      right: 0;
+      bottom: 0;
+      text-align: center; }
+      body .section.schedule .schedule-left p, body .section.schedule .schedule-right p {
+        font-size: 14px; }
+    body .section.schedule .schedule-left {
+      padding-bottom: 20px; }
+    body .section.helpful-info .info-item {
+      padding: 0;
+      margin-bottom: 0; }
+    body .section.our-story .story-item {
+      padding-bottom: 30px; }
+      body .section.our-story .story-item h3 {
+        font-size: 20px !important; }
+    body .section.rsvp .form-group .form-control {
+      font-size: 16px !important; }
+      body .section.rsvp .form-group .form-control::placeholder {
+        font-size: 16px !important; }
+  body .qbootstrap-cover {
+    padding: 0 !important; }
+  body .send-rsvp-button button {
+    width: 100%; }
+  body .login {
+    margin: 10px;
+    height: calc(100vh - 20px); }
+    body .login h2 {
+      font-size: 20px !important; }
+    body .login p {
+      font-size: 14px; } }
+
+@media (max-width: 991px) {
+  .qbootstrap-nav-toggle {
+    display: block; }
+  .navbar-header {
+    float: none; }
+  .navbar-left, .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important; }
+  .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
+    background: #cfb666; }
+  #qbootstrap-header #navbar li a {
+    padding: 20px 0 !important; }
+  #qbootstrap-header #navbar li.active a {
+    color: #cfb666 !important; }
+  #qbootstrap-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important; }
+    #qbootstrap-header #navbar li a span:before {
+      background-color: transparent !important; }
+  #qbootstrap-header #navbar li:hover a {
+    color: #cfb666 !important; } }

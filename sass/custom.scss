@@ -1,0 +1,819 @@
+//Ollie & Laura Wedding
+$font-heading: 'GFS Didot', serif;
+$font-paragraph: 'Open Sans', Arial, sans-serif;
+$gold: #cfb666;
+$grey: #7a7a7a;
+
+body{
+	background-image: url('../images/bg.png');
+	background-size: 100px;
+	h1, h2, h3, h4, h5{
+		font-family: $font-heading !important;
+		color: $gold;
+		text-transform: uppercase;
+	}
+	h2{
+		font-size: 35px !important;
+	}
+	h3{
+		font-size: 24px !important;
+	}
+	a{
+		color: $gold;
+		font-family: $font-heading;
+		&:hover{
+			color: $gold;
+		}
+	}
+	p{
+		font-family: $font-paragraph;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 100;
+	}
+
+	button{
+		font-family: $font-heading;
+	}
+
+	.highlight{
+		color: $gold;
+	}
+
+	.btn.btn-primary{
+		background-color: $gold;
+		border-radius: 0 !important;
+	}
+
+	.section-heading{
+		margin-bottom: 0;
+		h2{
+			color: $gold;
+		}
+	}
+
+	.section{
+		padding: 100px 30px;
+		overflow: hidden;
+		position: relative;
+		margin: 30px;
+		&:after{
+		 	content: " ";
+			color: transparent;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			border: 2px solid $gold;
+			border-radius: 15px;
+			z-index: -10;
+		}
+	}
+
+	//Header
+	header{
+		//min-height: 95px;
+		&#qbootstrap-header{
+			background-color: #ffffff;
+			margin-top: 0;
+			position: fixed;
+			border-bottom: 1px solid #e8e8e8;
+
+			#navbar{
+				li{
+					a{
+						color: #3e3e3e;
+						font-size: 14px;
+						letter-spacing: 0.5px;
+						-webkit-transition: all .5s;
+						   -moz-transition: all .5s;
+						    -ms-transition: all .5s;
+						     -o-transition: all .5s;
+						        transition: all .5s;
+						span{
+							font-family: $font-heading;
+							text-transform: uppercase;
+							&:before{
+								background-color: transparent;
+							}
+						}
+					}
+					&.active{
+						a{
+							color: $gold;
+						}
+					}
+					&:hover{
+						a{
+							color: $gold;
+						}
+					}
+				}
+			}
+			.navbar-brand{
+				padding: 10px 0;
+				img{
+					width: 80px;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	//Image sectins
+	.bg-image{
+		background-size: cover;
+		background-position: center;
+	    position: relative;
+	    background-repeat: no-repeat;
+	    z-index: 0;
+	    width: 100%;
+	    padding: 170px 0;
+	    height: auto !important;
+	}
+
+	//Hero
+	.qbootstrap-hero{
+		.qbootstrap-overlay{
+			background: rgba(0, 0, 0, 0.5) !important;
+		}
+		.display-tc{
+			h1{
+				letter-spacing: 5px !important;
+				font-size: 22px !important;
+				margin-bottom: 35px;
+				span{
+					&:before, &:after{
+						display: none;
+
+					}
+				}
+			}
+			h3{
+				font-size: 20px;
+				font-family: $font-heading;
+				margin-bottom: 40px;
+				color: #ffffff;
+				letter-spacing: 5px;
+				color: $gold;
+			}
+			p{
+				font-weight: 100;
+				font-size: 22px;
+				text-transform: uppercase;
+				font-family: $font-heading;
+				letter-spacing: 2px;
+				margin-bottom: 0;
+				line-height: 30px;
+			}
+			img{
+				max-width: 300px;
+			}
+		}
+	}
+
+	//Wedding Schedule
+	.schedule{
+		position: relative;
+		.schedule-item{
+			margin-bottom: 30px;
+			p{
+				padding-bottom: 40px;
+			}
+			img{
+				margin-bottom: 20px;
+				border-radius: 0;
+			}
+			h3.large{
+				font-size: 40px !important;
+			}
+		}
+		.schedule-left{
+			position: absolute;
+			left: 20px;
+			bottom:20px;
+			max-width: 50%;
+			p{
+				font-family: $font-heading;
+				text-transform: uppercase;
+				color: $gold;
+				margin:0;
+				padding: 0;
+			}
+		}
+		.schedule-right{
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			max-width: 50%;
+			p{
+				font-family: $font-heading;
+				text-transform: uppercase;
+				color: $gold;
+				margin:0;
+				padding: 0;
+			}
+		}
+	}
+
+	//Accommodation & Transport
+	.accommodation{
+		.accommodation-item{
+			margin-bottom: 40px;
+			.image{
+				padding-bottom: 40px;
+				img{
+					width: 100%;
+				}
+			}
+			p:first-child{
+				margin-bottom: 0;
+			}
+			span.price{
+				font-size: 20px;
+				display: block;
+				font-family: $font-paragraph;
+				font-weight: 100;
+				&.last{
+					padding-bottom: 50px;
+				}
+			}
+			span.amount{
+				color: $gold;
+				font-size: 50px;
+				font-family: $font-heading;
+				line-height: 50px;
+			}
+			&.evening{
+				.image{
+					padding-bottom: 20px;
+				}
+				h3{
+					margin-top: 0;
+					margin-bottom: 15px;
+				}
+				.contact{
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+
+	//About Foxhill
+	.helpful-info{
+		padding-bottom: 100px;
+		.info-item{
+			margin-bottom: 40px;
+			padding: 0 40px;
+			h3{
+				padding-bottom: 30px;
+			}
+			p.heading{
+				margin-bottom: 0;
+			}
+			p.sub-heading{
+				color: $gold;
+				font-weight: bold;
+			}
+			.church-img{
+				opacity: 0.6;
+				margin-bottom: 20px;
+			}
+			.info-section{
+				padding-bottom: 40px;
+			}
+		}
+	}
+
+	//Our Story
+	.our-story{
+		.story-row{
+			padding-bottom: 40px;
+			.story-item{
+				.thumbnail{
+					width: 100%;
+					padding-bottom: 62.326388888889%;
+					background-color: $gold;
+				}
+			}
+		}
+	}
+
+	//RSVP
+	.rsvp{
+		padding-bottom: 50px;
+		.form-group{
+			width: 100%;
+			margin-bottom: 30px;
+			.form-control{
+				width: 100% !important;
+				border-radius: 0 !important;
+				font-weight: normal;
+				background-color: #e5e5e5;
+				border-color: transparent;
+				font-family: $font-paragraph;
+				font-size: 16px;
+				&:focus{
+					border-color: $gold;
+				}
+			}
+			label{
+				font-weight: normal;
+				font-size: 16px;
+			}
+		}
+		.send-rsvp-button{
+			padding: 0;
+			float: right;
+			button{
+				border-radius: 0 !important;
+				background-color: $gold;
+				color: #ffffff;
+				border: 0;
+			}
+		}
+		.checkbox-container {
+	    display: block;
+	    position: relative;
+	    padding-left: 40px;
+	    margin-bottom: 12px;
+	    cursor: pointer;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    input[type="checkbox"] {
+			  position: absolute;
+			  opacity: 0;
+			  cursor: pointer;
+			  &:checked ~ .checkmark:after {
+				  display: block;
+				}
+			}
+			.checkmark {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 30px;
+		    width: 30px;
+		    background-color: #e5e5e5;
+		    border: 2px solid #e5e5e5;
+		    &:after {
+			    content: "";
+			    position: absolute;
+			    display: none;
+			    left: 11px;
+			    top: 6px;
+			    width: 8px;
+			    height: 15px;
+			    border: solid white;
+			    border-width: 0 3px 3px 0;
+			    -webkit-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    transform: rotate(45deg);
+				}
+			}
+			&:hover input ~ .checkmark {
+		    background-color: #ccc;
+			}
+			input:checked ~ .checkmark {
+		    background-color: $gold;
+		    border: 0;
+			}
+		}
+
+		.confirmation{
+			display: inline-block;
+		    width: 100%;
+		    background-color: #46b14f;
+		    text-align: center;
+		    padding: 10px;
+		    margin-top: 20px;
+		    margin-bottom: 40px;
+		    opacity: 0;
+		    color: #ffffff;
+	    p{
+	    	margin-bottom: 0;
+	    }
+		}
+		.mailto{
+			font-family: $font-paragraph;
+			color: #7f7f7f;
+			text-decoration: underline;
+			&:hover{
+				color: $gold;
+			}
+		}
+	}
+
+	//Footer
+	.footer{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+//Burger Nav
+.qbootstrap-nav-toggle i{
+	color: $gold;
+	background:$gold;
+	&:before{
+		color: $gold !important;
+		background: $gold !important;
+	}
+	&:after{
+		color: $gold !important;
+			background: $gold !important;
+	}
+}
+
+//Login
+.login{
+	text-align:center;
+	margin: 30px;
+	height: calc(100vh - 60px);
+	overflow: hidden;
+	position: relative;
+ 	&:after{
+	 	content: " ";
+		color: transparent;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		border: 2px solid $gold;
+		border-radius: 15px;
+	}
+	.container{
+		width: 100%;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		z-index: 10;
+		-webkit-transform: translate(-50%, -50%);
+		   -moz-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		     -o-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+	img{
+		margin-bottom: 30px;
+		width: 250px;
+	}
+	h2{
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-family: $font-heading;
+		font-size: 22px;
+		letter-spacing: 7px;
+	}
+	p{
+		font-family: $font-heading;
+		color: $gold;
+		letter-spacing: 3px;
+		font-size: 16px;
+	}
+	form{
+		max-width: 250px;
+		margin: 0 auto;
+	}
+	input{
+		-webkit-appearance: none;
+		border-radius: 0;
+		font-family: $font-heading;
+		//text-transform: uppercase;
+		font-size: 12px;
+		&:hover [type="submit"]{
+			background-color: #333333;
+		}
+	}
+	input[type="password"], input[type="text"]{
+		box-shadow: none;
+	    border: 1px solid #ccc;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    height: 45px;
+	    padding: 0 10px;
+	    text-align: center;
+	    outline: 0;
+	    font-family: $font-heading;
+	    font-size: 16px;
+	    -webkit-transition: all .25s ease;
+	       -moz-transition: all .25s ease;
+	        -ms-transition: all .25s ease;
+	         -o-transition: all .25s ease;
+	            transition: all .25s ease;
+	    &:focus{
+	    	border: 1px solid $gold;
+	    	&::placeholder{
+	    		opacity: 0;
+	    	}
+	    }
+	    &::placeholder{
+	    	font-family: $font-heading;
+	    	font-size: 13px;
+	    	text-transform: uppercase;
+	    	color: #b5b5b5 !important;
+	    	-webkit-transition: all .25s ease;
+		       -moz-transition: all .25s ease;
+		        -ms-transition: all .25s ease;
+		         -o-transition: all .25s ease;
+		            transition: all .25s ease;
+	    }
+	}
+	button{
+		background-color: $gold;
+		border: 0;
+		color: #ffffff;
+		height: 37px;
+		border: 1px solid $gold;
+		padding: 0 30px;
+		border-radius: 0;
+	}
+	.error{
+		p{
+			color: red;
+			font-family: $font-paragraph;
+			font-weight: bold;
+		    letter-spacing: 0;
+		    font-size: 14px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	body{
+		.section{
+			.container{
+				width: calc(750px - 100px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	body{
+		.section{
+			.container{
+				width: calc(970px - 100px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px){
+	body{
+		.section{
+			.container{
+				width: calc(1170px - 100px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		.section{
+			padding: 50px 0 !important;
+		}
+		.section-heading h2{
+			font-size: 30px !important;
+		}
+		//Hero
+		.qbootstrap-hero{
+			.display-tc{
+				img{
+					max-width: 200px;
+				}
+				.holder{
+					font-size: 18px !important;
+					span:before{
+						display: none;
+					}
+					span:after{
+						display: none;
+					}
+				}
+				h3{
+					font-size: 20px !important;
+				}
+				p{
+					font-size: 18px;
+					line-height: 24px;
+				}
+			}
+		}
+		.bg-image{
+			background-position: center !important;
+			padding: 100px 0;
+		}
+
+		//Schedule
+		.schedule{
+			.schedule-left, .schedule-right{
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.login{
+		img{
+			width: 200px;
+		}
+		h1{
+			font-size: 50px;
+		}
+		button{
+			height: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	body{
+		p{
+			font-size: 16px;
+		}
+		header{
+			min-height: auto;
+			.navbar-brand{
+				padding: 10px 0 !important;
+				img{
+					width: 80px !important;
+				}
+			}
+		}
+		.section{
+			margin: 30px 20px; 
+			.section-heading{
+				h2{
+					font-size: 26px !important;
+				}
+			}
+			.btn-primary{
+				font-size: 12px;
+			}
+			&.accommodation{
+				.accommodation-item{
+					.item{
+						padding-bottom: 30px;
+					}
+				}
+				.amount{
+					font-size: 40px !important;
+				}
+				.price{
+					font-size: 16px !important;
+				}
+			}
+
+			&.schedule{
+				.schedule-item{
+					p{
+						padding-bottom: 0px; 
+					}
+					.large{
+						margin-top: 0;
+						font-size: 32px !important;
+					}
+				}
+				.schedule-left, .schedule-right{
+					position: relative;
+					width: calc(100% - 40px);
+					display: block;
+					max-width: none;
+					left: 20px;
+					right:0;
+					bottom: 0;
+					text-align: center;
+					p{
+						font-size: 14px;
+					}
+				}
+
+				.schedule-left{
+					padding-bottom: 20px;
+				}
+			}
+			&.helpful-info{
+				.info-item{
+					padding: 0;
+					margin-bottom: 0;
+				}
+			}
+			&.our-story{
+				.story-item{
+					padding-bottom: 30px;
+					h3{
+						font-size: 20px !important;
+					}
+				}
+			}
+			&.rsvp .form-group .form-control{
+				font-size: 16px !important;
+				&::placeholder{
+					font-size: 16px !important;
+				}
+			}
+		}
+
+		.qbootstrap-cover{
+			padding: 0 !important;
+		}
+		.send-rsvp-button button{
+			width: 100%;
+		}
+		.login{
+			margin: 10px;
+			height: calc(100vh - 20px);
+			h2{
+				font-size: 20px !important;
+			}
+			p{
+				font-size: 14px;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 991px) {
+	.qbootstrap-nav-toggle{
+		display: block;
+	}
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+    .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after{
+    	background: $gold;
+    }
+
+    #qbootstrap-header{
+    	#navbar{
+    		li{
+    			a{
+    				padding: 20px 0 !important; 
+    			}
+    			&.active{
+    				a{
+    					color: $gold !important;
+    				}
+    			}
+    		}
+    	}
+    }
+
+    #qbootstrap-header{
+    	#navbar{
+    		li{
+    			a{
+    				color: rgba(0, 0, 0, 0.5) !important;
+    				span:before{
+    					background-color: transparent !important;
+    				}
+    			}
+    			&:hover a{
+    				color: $gold !important;
+    			}
+    		}
+    	}
+    }
+}
